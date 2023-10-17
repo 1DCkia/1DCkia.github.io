@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiss-Style Tournament</title>
+    <style>
+        /* Add your CSS styles here */
+        .match-box {
+            width: 200px;
+            height: 50px;
+            border: 2px solid #000;
+            margin: 10px 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+        }
+
+        .rectangle-label {
+            font-size: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .round-gap {
+            width: 100px; /* Create a small gap between rounds */
+            display: inline-block;
+        }
+
+        .round1,
+        .round2,
+        .round3,
+        .round4,
+        .round5 {
+            float: left;
+            width: 20%; /* Make the rounds take up 20% of the width each */
+            margin-top: 50px;
+        }
+
+        .big-rectangle1-0,
+        .big-rectangle0-1,
+        .big-rectangle2-0,
+        .big-rectangle1-1,
+        .big-rectangle0-2 {
+            border: 2px solid #000;
+            padding: 10px;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        .round-container {
+            float: left;
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Swiss-Style Tournament</h1>
+
+    <div id="round-1" class="round1">
+        <h2>Round 1</h2>
+        <!-- Create a match box for each match in round 1 -->
+        <div class="match-box">GEN.G vs. GAM</div>
+        <div class="match-box">NRG vs. WBG</div>
+        <div class="match-box">G2 vs. DK</div>
+        <div class="match-box">JDG vs. BDS</div>
+        <div class="match-box">T1 vs. TL</div>
+        <div class="match-box">C9 vs. MAD</div>
+        <div class="match-box">BLG vs. KT</div>
+        <div class="match-box">FNC vs. LNG</div>
+    </div>
+
+    <div class="round-gap"></div> <!-- Gap between rounds -->
+
+    <div id="round-2" class="round-container">
+        <h2>Round 2</h2>
+        <div class="big-rectangle1-0">
+            <h2 class="rectangle-label">Matchup [1-0]</h2>
+            <!-- Create drop-down lists for each match in Round 2 -->
+            <div class="match-box">
+                <select>
+                    <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    
+                    
+                    <!-- Add more options as needed -->
+                </select>
+                vs.
+                <select>
+                     <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <!-- Add more match boxes here -->
+            
+            <div class="match-box">
+                <select>
+                    <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    
+                    
+                    <!-- Add more options as needed -->
+                </select>
+                vs.
+                <select>
+                     <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <!-- Add more match boxes here -->
+            
+            <div class="match-box">
+                <select>
+                    <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    
+                    
+                    <!-- Add more options as needed -->
+                </select>
+                vs.
+                <select>
+                     <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <!-- Add more match boxes here -->
+            
+            <div class="match-box">
+                <select>
+                    <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    
+                    
+                    <!-- Add more options as needed -->
+                </select>
+                vs.
+                <select>
+                     <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <!-- Add more match boxes here -->
+            
+            
+        </div>
+
+        <div class="big-rectangle0-1">
+            <h2 class="rectangle-label">Matchup [0-1]</h2>
+            <!-- Create drop-down lists for each match in Round 2 -->
+            <div class="match-box">
+                <select>
+                    <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    
+                    
+                    <!-- Add more options as needed -->
+                </select>
+                vs.
+                <select>
+                     <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <!-- Add more match boxes here -->
+            
+            <div class="match-box">
+                <select>
+                    <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    
+                    
+                    <!-- Add more options as needed -->
+                </select>
+                vs.
+                <select>
+                     <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <!-- Add more match boxes here -->
+            
+            <div class="match-box">
+                <select>
+                    <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    
+                    
+                    <!-- Add more options as needed -->
+                </select>
+                vs.
+                <select>
+                     <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <!-- Add more match boxes here -->
+            
+            <div class="match-box">
+                <select>
+                    <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    
+                    
+                    <!-- Add more options as needed -->
+                </select>
+                vs.
+                <select>
+                     <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <!-- Add more match boxes here -->
+            
+            
+        </div>
+    </div>
+
+    <div class="round-gap"></div> <!-- Gap between rounds -->
+
+    <div id="round-3" class="round-container">
+        <h2>Round 3</h2>
+        <div class="big-rectangle2-0">
+            <h2 class="rectangle-label">Matchup [2-0]</h2>
+            <!-- Create drop-down lists for each match in Round 3 -->
+            <div class="match-box">
+                <select>
+                    <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    
+                    
+                    <!-- Add more options as needed -->
+                </select>
+                vs.
+                <select>
+                     <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <!-- Add more match boxes here -->
+            
+             <div class="match-box">
+                <select>
+                    <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    
+                    
+                    <!-- Add more options as needed -->
+                </select>
+                vs.
+                <select>
+                     <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <!-- Add more match boxes here -->
+        </div>
+
+        <div class="big-rectangle1-1">
+            <h2 class="rectangle-label">Matchup [1-1]</h2>
+            <!-- Create drop-down lists for each match in Round 3 -->
+             <div class="match-box">
+                <select>
+                    <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    
+                    
+                    <!-- Add more options as needed -->
+                </select>
+                vs.
+                <select>
+                     <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <!-- Add more match boxes here -->
+            
+             <div class="match-box">
+                <select>
+                    <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    
+                    
+                    <!-- Add more options as needed -->
+                </select>
+                vs.
+                <select>
+                     <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <!-- Add more match boxes here -->
+            
+             <div class="match-box">
+                <select>
+                    <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    
+                    
+                    <!-- Add more options as needed -->
+                </select>
+                vs.
+                <select>
+                     <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <!-- Add more match boxes here -->
+            
+             <div class="match-box">
+                <select>
+                    <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    
+                    
+                    <!-- Add more options as needed -->
+                </select>
+                vs.
+                <select>
+                     <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <!-- Add more match boxes here -->
+        </div>
+
+        <div class="big-rectangle0-2">
+            <h2 class="rectangle-label">Matchup [0-2]</h2>
+            <!-- Create drop-down lists for each match in Round 3 -->
+             <div class="match-box">
+                <select>
+                    <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    
+                    
+                    <!-- Add more options as needed -->
+                </select>
+                vs.
+                <select>
+                     <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <!-- Add more match boxes here -->
+            
+             <div class="match-box">
+                <select>
+                    <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    
+                    
+                    <!-- Add more options as needed -->
+                </select>
+                vs.
+                <select>
+                     <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <!-- Add more match boxes here -->
+        </div>
+    </div>
+
+    <div class="round-gap"></div> <!-- Gap between rounds -->
+
+    <div id="round-4" class="round-container">
+        <h2>Round 4</h2>
+        <div class="big-rectangle1-0">
+            <h2 class="rectangle-label">Matchup [2-1]</h2>
+            <!-- Create drop-down lists for each match in Round 4 -->
+            <div class="match-box">
+                <select>
+                    <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    
+                    
+                    <!-- Add more options as needed -->
+                </select>
+                vs.
+                <select>
+                     <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <!-- Add more match boxes here -->
+             <div class="match-box">
+                <select>
+                    <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    
+                    
+                    <!-- Add more options as needed -->
+                </select>
+                vs.
+                <select>
+                     <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <!-- Add more match boxes here -->
+            
+            
+             <div class="match-box">
+                <select>
+                    <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    
+                    
+                    <!-- Add more options as needed -->
+                </select>
+                vs.
+                <select>
+                     <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <!-- Add more match boxes here -->
+        </div>
+
+        <div class="big-rectangle0-1">
+            <h2 class="rectangle-label">Matchup [1-2]</h2>
+            <!-- Create drop-down lists for each match in Round 4 -->
+             <div class="match-box">
+                <select>
+                    <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    
+                    
+                    <!-- Add more options as needed -->
+                </select>
+                vs.
+                <select>
+                     <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <!-- Add more match boxes here -->
+            
+             <div class="match-box">
+                <select>
+                    <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    
+                    
+                    <!-- Add more options as needed -->
+                </select>
+                vs.
+                <select>
+                     <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <!-- Add more match boxes here -->
+            
+             <div class="match-box">
+                <select>
+                    <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    
+                    
+                    <!-- Add more options as needed -->
+                </select>
+                vs.
+                <select>
+                     <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <!-- Add more match boxes here -->
+        </div>
+    </div>
+
+    <div class="round-gap"></div> <!-- Gap between rounds -->
+
+    <div id="round-5" class="round-container">
+        <h2>Round 5</h2>
+        <div class="big-rectangle1-0">
+            <h2 class="rectangle-label">Matchup [2-2]</h2>
+            <!-- Create drop-down lists for each match in Round 5 -->
+            <div class="match-box">
+                <select>
+                    <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    
+                    
+                    <!-- Add more options as needed -->
+                </select>
+                vs.
+                <select>
+                     <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <!-- Add more match boxes here -->
+             <div class="match-box">
+                <select>
+                    <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    
+                    
+                    <!-- Add more options as needed -->
+                </select>
+                vs.
+                <select>
+                     <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <!-- Add more match boxes here -->
+             <div class="match-box">
+                <select>
+                    <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    
+                    
+                    <!-- Add more options as needed -->
+                </select>
+                vs.
+                <select>
+                     <option value="team-1">GEN.G</option>
+                    <option value="team-2">T1</option>
+                    <option value="team-2">KT</option>
+                    <option value="team-2">DK</option>
+                    <option value="team-2">JDG</option>
+                    <option value="team-2">BLG</option>
+                    <option value="team-2">LNG</option>
+                    <option value="team-2">WBG</option>
+                    <option value="team-2">G2</option>
+                    <option value="team-2">FNC</option>
+                    <option value="team-2">MAD</option>
+                    <option value="team-2">BDS</option>
+                    <option value="team-2">NRG</option>
+                    <option value="team-2">C9</option>
+                    <option value="team-2">TL</option>
+                    <option value="team-2">GAM</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <!-- Add more match boxes here -->
+        </div>
+    </div>
+
+</body>
+</html>
